@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingRight="10px"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#68a99f9f"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/login_circle"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+        <Button
+            android:text="头像上传"
+            android:id="@+id/upload"
+            android:textSize="10dp"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="发表心情"
+            android:id="@+id/mood"
+            android:textSize="10dp"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingRight="10px"
+        android:paddingTop="30px"
+        android:paddingBottom="10px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/login"
+            android:text="@string/Login"
+            android:layout_width="0dp"
+            android:layout_height="35dp" />
+        <EditText
+            android:textSize="30px"
+            android:background="@drawable/rounded_editview"
+            android:id="@+id/username"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:paddingRight="10px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/login2"
+            android:text="密码"
+            android:layout_width="0dp"
+            android:layout_height="35dp" />
+        <EditText
+
+            android:textSize="30px"
+            android:paddingRight="5px"
+            android:background="@drawable/rounded_editview"
+            android:id="@+id/password"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:password="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@null"
+            android:paddingRight="5dp"
+            android:text="@string/ll"
+            android:id="@+id/btlogin"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@null"
+            android:text="@string/resigster"
+            android:layout_weight="1"
+            android:id="@+id/register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

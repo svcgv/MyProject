@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.myproject.activity.MoodActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+ <LinearLayout
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     <ImageView
+         android:id="@+id/userImage"
+         android:src="@drawable/login_circle"
+         android:layout_width="25dp"
+         android:layout_height="25dp" />
+     <TextView
+         android:id="@+id/user"
+         android:text="周健"
+         android:paddingTop="10dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="8dp"
+         />
+
+ </LinearLayout>
+        <EditText
+            android:gravity="top"
+              android:id="@+id/contenttext"
+              android:hint="今天是个好日子"
+              android:layout_width="match_parent"
+              android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_weight="6"
+        android:src="@drawable/login_circle"
+        android:id="@+id/contentImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+        <Button
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:text="头像上传"
+            android:id="@+id/uploadimage"
+            android:textSize="10dp"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@null"
+            android:paddingRight="5dp"
+            android:text="发表"
+            android:id="@+id/fabiao"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@null"
+            android:text="取消"
+            android:layout_weight="1"
+            android:id="@+id/quxiao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
