@@ -1,5 +1,6 @@
 package com.example.administrator.myapplication.adapter;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -23,6 +24,8 @@ import android.widget.Toast;
 
 import com.example.administrator.myapplication.Entity.Comment;
 import com.example.administrator.myapplication.R;
+import com.example.administrator.myapplication.activity.MoodActivity;
+import com.example.administrator.myapplication.activity.ShowCommentActivty;
 import com.example.administrator.myapplication.bean.JsonInfo;
 import com.example.administrator.myapplication.disk.DiskApp;
 import com.example.administrator.myapplication.disk.DiskConfig;
@@ -199,10 +202,13 @@ public class ItemAdapter extends BaseAdapter {
 
             }
         });
+        //显示评论
         viewHolder.commentContent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent=new Intent(context, ShowCommentActivty.class);
+                intent.putExtra("id",info.infos[position].id);
+                context.startActivity(intent);
             }
         });
         return convertView;

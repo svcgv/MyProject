@@ -4,7 +4,7 @@ package com.example.administrator.myapplication.staticc;
  */
 public class DefineStatic {
     //public final  static  String loachost="http://115.28.72.15:8080/indexget.php";
-     public final static  String ip="http://192.168.1.103:8088";
+     public final static  String ip="http://192.168.1.102:8088";
      public  final  static  String LOGIN="login";
      public final  static  String RESIGSTER="resisger";
  /*  public final static  String  loachost="http://192.168.1.105:8088/indexget.php";
@@ -24,5 +24,6 @@ public class DefineStatic {
     public  final static  String UPLOADMOOD=ip+"/MyProject/index.php/Admin/Index/uploadMood";
     public  final  static  String INFO=ip+"/MyProject/index.php/Admin/Index/Myinfo";
     public  final  static  String INSERTCOMMENT=ip+"/MyProject/index.php/Admin/Index/insertcomment";
+    public  final  static  String  GETCOMMENT=ip+"/MyProject/index.php/Admin/Index/querycomment";
 
 }

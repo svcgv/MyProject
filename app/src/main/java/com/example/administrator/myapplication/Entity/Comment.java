@@ -10,4 +10,9 @@ public class Comment {
     public String username;
     public String commt;
     public String timedate;
+
+    @Override
+    public String toString() {
+        return ""+id+comment_id+username+timedate;
+    }
 }
